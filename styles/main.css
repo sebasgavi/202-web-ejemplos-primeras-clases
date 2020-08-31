@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/*
+quién {
+  qué-propiedad: cómo;
+}
+*/
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.human {
+    width: 200px;
+    height: 700px;
+    display: none;
+}
+
+.human__head {
+    height: 25%;
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+}
+
+.human__body {
+    height: 35%;
+    background-color: hotpink;
+}
+
+.human__legs {
+    height: 40%;
+    background-color: indigo;
+}
+
+.human__eyes {
+    width: 30px;
+    height: 30%;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.human--tall {
+    height: 800px;
+}
+
+.human--short {
+    height: 500px;
+    width: 150px;
+}
+
+.human__eyes--red {
+    background-color: red;
+    background-color: rgb(1,1,1);
+    background-color: rgba(1,1,1,.5);
+    background-color: hsl(10, 10%, 50%);
+    background-color: #113a12;
+}
+
+.human__eyes--big {
+    height: 35px;
+    width: 35px;
+}
+
+strong {
+  font-size: 2em;
+}
+
+body{ font-size: 24px;}
+h1{ font-size: 2em;}        /* = 32px */
+h2{ font-size: 1.5em;}      /* = 24px */
+aside{ font-size: 0.75em;}  /* = 12px */
+p{ font-size: 1em;}

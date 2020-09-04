@@ -113,7 +113,7 @@ body {
 
   box-shadow: 0px 4px 10px rgba(0,0,0,.4);
 }
-.project__info{
+.project__info {
   width: 350px;
   padding: 50px;
   margin: 0;
@@ -121,12 +121,17 @@ body {
 .project__info h4 {
   margin-top: 20px;
 }
-.project__image{
+.project__image {
   flex-grow: 1;
   background-image: url(https://melilloandbauer.com/wp-content/uploads/2018/06/mb-harrison-urby-11.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: 100%;
   position: relative;
+  transition: background-size 2s ease, opacity 6s ease;
+}
+.project__image:hover {
+  background-size: 120%;
+  opacity: .5;
 }
 .project__btn {
   width: 40px;
@@ -135,4 +140,59 @@ body {
   position: absolute;
   right: 0px;
   top: 0px;
+  transition: background-color 1s ease;
+}
+.project__btn:hover {
+  background-color: orangered;
+}
+
+
+@media print {
+
+  .project__image {
+    display: none;
+  }
+
+  .project__info{
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+  .project {
+    flex-direction: column;
+  }
+  .project__info {
+    width: 100%;
+  }
+  .project__image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 650px) {
+  .project__info {
+    order: 1;
+  }
+  .project__image {
+    height: 200px;
+  }
+}
+
+
+
+li:first-child::first-letter {
+  color: red;
+  font-size: 200%;
+}
+
+input::placeholder {
+  color: orange;
+}
+
+li::after {
+  content: '♠';
+  color: orange;
 }
